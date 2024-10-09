@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter_2</title>
+  <script src="Boolean.js"></script>
+</head>
+<body>
+   <h1>if-else & Boolean</h1>
+   <ol>
+    <li>What are Booleans</li>
+    <li>Comparison Operators</li>
+    <li>If-Else</li>
+    <li>Logical Opertor</li>
+    <li>Scope</li>
+    <li>Truthy and Falsy Values</li>
+    <li>If Alternates</li>
+   </ol>
+         <hr>
+
+   <h1>What are Booleans</h1>
+     <ul>
+      <li>Data Type:Booleans are a basic data type in JavaScript.</li>
+      <li>Two Values:Can only be true or false.</li>
+      <li>'True' is a String not a Boolean.</li>
+     </ul>
+    <hr>
+
+   <h2>Comparison Operators</h2>
+    <ul>
+      <li>Equality: == Checks value equality. </li>
+      <li>=== Checks value and type equality.</li>
+      <li>Inequality: != Checks value inequality.</li>
+      <li>!== Checks value inequality.</li>
+      <li>Relational: > Greather Than.</li>
+      <li> < Less Than</li>
+      <li> >= Greather than or equal to.</li>
+      <li> <= Less than or equal to. </li>
+    <li>Order of comparison opertors is less than arithmetic opertors.</li>
+    </ul>
+    <hr>
+
+    <h2>If-Else</h2>
+      <ul>
+        <li>Syntax:Uses if () {} to check a condition.</li>
+        <li>What is if:Executes block if condition is true,skips if false.</li>
+        <li>What is else:Executes a block when the if condition is false.</li>
+        <li>Curly braces can be omitted for single statements but not recommended.</li>
+        <li>If-else Ladder:Multiple if and else if blocks:Only one executes.</li>
+        <li>Use Variables:Can store conditions in variables for use in if statements.</li>
+      </ul>
+    <hr>
+
+    <h2>Logical Operators</h2>
+     <ul>
+      <li>Types:&&(AND), ||(OR), !(NOT)</li>
+      <li>AND(&&):All conditions must be true or the result to be true.</li>
+      <li>OR(||):Only one condition must be true for the result to be true.</li>
+      <li>NOT(!):Inverst the Boolean value of a condition.</li>
+      <li>LowerProity than math and comparison opertors.</li>
+     </ul>
+    <hr>
+
+    <h2>Scope</h2>
+      <ul>
+        <li>Any variable created inside {} will remain inside {}.</li>
+        <li>Variable can be redefined inside {}.</li>
+        <li>Var does not follow scope.</li>
+        <li>Global Scope:Accessible everywhere in the code.</li>
+        <li>Block Scope:Limited to a block,mainly with let and const.</li>
+        <li>Declare Variables in the narrowest scope possible.</li>
+      </ul>
+    <hr>
+
+    <h2>Truthy and Falsy Values</h2>
+     <ul>
+      <li>Falsy Values:0, null, underfined, false, nan, "" (empty String).</li>
+      <li>Truthy Values:All values not listed as falsy.</li>
+      <li>Used in conditional statements like if.</li>
+      <li>NOn-Boolean values are auto-converted in logical operations.</li>
+      <li>Be expicit in comparisons to avoid unexpected behaviour.</li>
+     </ul>
+    <hr>
+
+   <h2>If Alternates</h2>
+   <ul>
+    <li>Ternary Operator:Condition trueValue:falseValue quick one-line if-else.</li>
+    <li>Guard Operator:Value || default value use when a fallback value is needed.</li>
+    <li>Default Opertor:Value fallback Value use when you want to consider only null and underfined as falsy.</li>
+    <li>Simplifies conditional falsy.</li>
+    <li>Use wisely to maintain readabillity.</li>
+   </ul>
+</body>
+</html>

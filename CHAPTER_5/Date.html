@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Date and Dom</title>
+</head>
+<body>
+   <h1>Date</h1>
+    <ol>
+      <li>newDate() Creates a newDate object with the current date and time.</li>
+    </ol>
+
+    <h2>Key Methods</h2>
+     <ol>
+      <li>getTime():Milliseconds since Epoch.</li>
+      <li>getFullYear():4-digit year.</li>
+      <li>getDay():Day of the week.</li>
+      <li>getMinutes():Current minute.</li>
+      <li>getHours():Current hour.</li>
+     </ol> 
+
+     <ol>
+      <li>Crucial for timeStamps,schedling,etc.</li>
+     </ol>
+  <hr>
+
+   <h2>DOM Properties & Methods</h2>
+      <h3>DOM and Element Properties</h3>
+       <ol>
+          <li>Location</li>
+          <li>title</li>
+          <li>href</li>
+          <li>domain</li>
+          <li>innerHTML</li>
+          <li>innerText</li>
+          <li>classList</li>
+       </ol>
+
+    <h3>DOM and Element Methods</h3>
+      <ol>
+        <li>getElementByld()</li>
+        <li>querySelector()</li>
+        <li>classList:and(),removed()</li>
+        <li>createElement()</li>
+        <li>appendChild()</li>
+        <li>removeChild()</li>
+        <li>replaceChild()</li>
+      </ol>
+  <hr>
+
+      <div class="my-div">This is the div</div>
+
+     <script>
+         let myDate =  new Date();
+          console.log(myDate.getTime());
+          console.log(myDate.getFullYear());
+          console.log(myDate.getDay());
+          console.log(myDate.getHours());
+          console.log(myDate.getMinutes());
+          console.log(myDate.getMilliseconds());
+
+          let button = document.createElement('Button');
+          button.innerText = 'Click Me';
+          document.querySelector('.my-div').appendChild(button);
+          document.querySelector('.my-div').removeChild(button);
+     </script>
+</body>
+</html>

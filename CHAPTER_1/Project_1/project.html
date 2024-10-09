@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project For Practise Set_1</title>
+</head>
+<body>
+  <h1>Save your Name in a Variable inside Script tag.</h1>
+  <script>
+     const myName ='Virendra';
+  </script>
+  <hr>
+
+  <h2>Display Name from the Variable on the page.</h2>
+      <p id="name-display">Name</p>
+      <script>
+        let show = true;
+        function run() {
+          if(show){
+            document.querySelector('#name-display').innerText = myName;
+          }
+          else{
+            document.querySelector('#name-display').innerText = "name"
+          }
+           show = !show
+        }
+      </script>
+      <button id="btn" onclick="run()">show name</button>
+    <hr>
+
+  <h2>Calculate the cost of Myntra Bag and keep it in a Variable.</h2>
+  <script>
+    const GSTPercentage = 18;
+    let cartValue = Math.round(((15599 - (10/100 * 15599)) - 272 + (2499 - (41/100*2499)) - 29 +25 +20) * (100 + GSTPercentage) / 100);
+    console.log(cartValue); 
+  </script>
+
+  <h3>Use eval Method from math to convert string calculation into result.</h3>
+  <script>
+    console.log(eval('2+3+5*7-9'));
+  </script>
+</body>
+</html>
